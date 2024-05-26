@@ -18,7 +18,7 @@ return (
     </div>
     <div className="div2">
       <div className="nav-links">
-        <a href="/home">Home</a>
+        <a href="/about">About Us</a>
         <a href="/services">Services</a>
         <a href="/doctors">Doctors</a>
         <a href="/contact">Contact Us</a>

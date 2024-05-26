@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
  }
+ 
  body{
    color: #040b30;
   /* rgba(255, 255, 255, 0.2)  */
@@ -336,4 +337,7 @@
   background-color: #146E90;
   cursor: pointer;
   transform: translateY(-3px);
+}
+#h2{
+  color: white;
 }

@@ -26,7 +26,7 @@ function CoverPage() {
 
     <section class="testimonials">
         <div class="container">
-            <h2>What Our Patients Say</h2>
+            <h2 id='h2'>What Our Patients Say</h2>
             <div class="testimonial">
                 <p>"Nexus Medica has transformed my life with their exceptional care!" - John Doe</p>
             </div>
@@ -36,7 +36,7 @@ function CoverPage() {
     <Services />
     <section class="about-us">
         <div class="container">
-            <h2>About Us</h2>
+            <h2 id='h2'>About Us</h2>
             <p>Nexus Medica was founded with the mission to provide high-quality medical care to our community.</p>
         </div>
     </section>

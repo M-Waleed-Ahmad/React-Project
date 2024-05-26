@@ -4,6 +4,14 @@ import "../styles/Services.css";
 
 import image1 from "../assets/images/2.jpg";
 import image2 from "../assets/images/3.jpg";
+import image3 from "../assets/images/4.jpg";
+import image4 from "../assets/images/5.png";
+import image5 from "../assets/images/6.jpg";
+import image6 from "../assets/images/7.jpeg";
+import image7 from "../assets/images/8.jpeg";
+import image8 from "../assets/images/9.jpeg";
+import image9 from "../assets/images/10.jpeg";
+import image10 from "../assets/images/11.jpeg";
 
 const Services = () => { 
 
@@ -19,6 +27,54 @@ const Services = () => {
           title: 'Service 2',
           description: 'Suspendisse commodo urna eu nisl aliquam, a fringilla arcu gravida.',
           imageUrl: image2,
+        },
+        {
+          id: 3,
+          title: 'Service 3',
+          description: 'Suspendisse commodo urna eu nisl aliquam, a fringilla arcu gravida.',
+          imageUrl: image3,
+        },
+        {
+          id: 4,
+          title: 'Service 2',
+          description: 'Suspendisse commodo urna eu nisl aliquam, a fringilla arcu gravida.',
+          imageUrl: image4,
+        },
+        {
+          id: 5,
+          title: 'Service 2',
+          description: 'Suspendisse commodo urna eu nisl aliquam, a fringilla arcu gravida.',
+          imageUrl: image5,
+        },
+        {
+          id: 6,
+          title: 'Service 2',
+          description: 'Suspendisse commodo urna eu nisl aliquam, a fringilla arcu gravida.',
+          imageUrl: image6,
+        },
+        {
+          id: 7,
+          title: 'Service 2',
+          description: 'Suspendisse commodo urna eu nisl aliquam, a fringilla arcu gravida.',
+          imageUrl: image7,
+        },
+        {
+          id: 8,
+          title: 'Service 2',
+          description: 'Suspendisse commodo urna eu nisl aliquam, a fringilla arcu gravida.',
+          imageUrl: image8,
+        },
+        {
+          id: 9,
+          title: 'Service 2',
+          description: 'Suspendisse commodo urna eu nisl aliquam, a fringilla arcu gravida.',
+          imageUrl: image9,
+        },
+        {
+          id: 10,
+          title: 'Service 2',
+          description: 'Suspendisse commodo urna eu nisl aliquam, a fringilla arcu gravida.',
+          imageUrl: image10,
         },
         // Add more services as needed
       ];

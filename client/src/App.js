@@ -1,13 +1,19 @@
-// src/App.js
-
 import React from 'react';
-import CoverPage from './pages/CoverPage';
- function App() {
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './pages/HomePage'; // Example page components
+import About from './pages/AboutPage';
+import Contact from './pages/ContactPage';
+
+const App = () => {
   return (
-    <div className="App">
-      <CoverPage />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
