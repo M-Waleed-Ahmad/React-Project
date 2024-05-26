@@ -104,6 +104,9 @@
     .navbar .nav-links {
       display: none; 
     }
+    .navbar .signup-logout {
+      display: none; 
+    }
  
     .navbar  {
         border-radius: 0px;
@@ -142,4 +145,13 @@
   .Sidebar.show {
     left: 0;  
   }
-  
+  .Sidebar .signup-logouts  {
+    background-color: #fff;
+    color: #3EABE1;
+    padding: 8px 15px;
+    transition: all 0.3s ease;
+  }
+  .signup-logouts:hover {
+    background-color: #3EABE1;
+    color: #fff;
+  }
