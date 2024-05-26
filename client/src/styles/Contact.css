@@ -1,0 +1,104 @@
+.contact-us {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.box{
+    display: flex;
+}
+
+h2, h3, h4 {
+    color: #333;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.contact-item {
+    flex: 1 1 200px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-item .icon {
+    margin-right: 10px;
+}
+
+.map {
+    flex: 1;
+}
+.map iframe {
+    width: 100%;
+    border: 0;
+    margin-bottom: 20px;
+}
+
+
+.faq {
+    margin:30px 0px;
+}
+.faq h4{
+    margin: 10px 0px;
+}
+#contact-h3{
+    color: #146E90;
+    text-align: center;
+}
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto 20px;
+}
+
+.newsletter-form input, 
+.newsletter-form button {
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.newsletter-form button {
+    background-color: #3EABE1;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #fff;
+}
+
+.newsletter-form button:hover {
+    background-color: #146E90;
+}
+
+form input, 
+form textarea, 
+form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #3EABE1;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #fff;
+}
+
+form button:hover {
+    background-color: #146E90;
+}

@@ -18,14 +18,16 @@ return (
     </div>
     <div className="div2">
       <div className="nav-links">
-        <a href="/home">Home</a>
+        <a href="/about">About Us</a>
         <a href="/services">Services</a>
         <a href="/doctors">Doctors</a>
         <a href="/contact">Contact Us</a>
-        <a href="/ask" className="signup-logout">Signup / Logout</a>
 
       </div>
 
+      <div className='div3'>
+        <a href="/ask" className="signup-logout">Signup / Logout</a>
+      </div>
     </div>
       {/* Hamburger menu */}
       <div className="hamburger-menu" onClick={toggleSidebar}>
@@ -38,7 +40,7 @@ return (
             <a href="/services">Services</a>
             <a href="/doctors">Doctors</a>
             <a href="/contact">Contact Us</a>
-            <a href="/ask" className="signup-logout">Signup / Logout</a>
+            <a href="/ask" className="signup-logouts">Signup / Logout</a>
     </div>
   </div>
   
