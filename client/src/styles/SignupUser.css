@@ -1,0 +1,90 @@
+.spu-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.spu-header {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.spu-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.spu-form-group {
+    margin-bottom: 15px;
+}
+
+.spu-name-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.spu-half {
+    width: 48%;
+}
+
+.spu-input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.spu-form-group label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.spu-form-group input,
+.spu-form-group select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.spu-form-group input:focus,
+.spu-form-group select:focus {
+    border-color: #3EABE1;
+}
+
+.spu-submit-btn {
+    background-color: #3EABE1;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.spu-submit-btn:hover {
+    background-color: #146E90;
+}
+
+p {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+p a {
+    color: #3EABE1;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+.highlight-error input[type='password'] {
+    border-color: red; 
+}

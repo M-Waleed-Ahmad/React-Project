@@ -69,14 +69,20 @@
     color: #3EABE1;
     padding: 8px 15px;
     transition: all 0.3s ease;
+    border-radius: 5px;
   }
 
   .navbar .signup-logout:hover {
+    transform: scale(1.1);
+    cursor: pointer;
     background-color: #3EABE1;
     color: #fff;
   }
 
-
+.div3 button{
+  background: transparent;
+  border: none;
+}
 .hamburger-menu {
     display: none;  
     cursor: pointer;
@@ -158,6 +164,8 @@
     transition: all 0.3s ease;
   }
   .signup-logouts:hover {
+    transform: scale(1.1);
+    cursor: pointer;
     background-color: #3EABE1;
     color: #fff;
   }

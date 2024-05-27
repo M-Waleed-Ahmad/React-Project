@@ -5,8 +5,10 @@ import Navbar from '../components/Navbar';
 import Services from '../components/Services';
 import contactImage from '../assets/Contact.jpg';
 import Footer from '../components/Footer';
+
 import '../styles/CoverPage.css';
 function CoverPage() {
+
   return (
     <>
     <Navbar />

@@ -1,0 +1,106 @@
+.psp-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.psp-header,
+.psp-subheader {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.psp-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.psp-form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.psp-name-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.psp-half {
+    width: 48%;
+}
+
+.psp-input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.psp-form-group label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.psp-form-group input,
+.psp-form-group select,
+.psp-form-group textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.psp-form-group input:focus,
+.psp-form-group select:focus,
+.psp-form-group textarea:focus {
+    border-color: #3EABE1;
+}
+
+.psp-add-more-btn {
+    background-color: #3EABE1;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+}
+
+.psp-add-more-btn:hover {
+    background-color: #146E90;
+}
+
+.psp-submit-btn {
+    background-color: #3EABE1;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.psp-submit-btn:hover {
+    background-color: #146E90;
+}
+
+p {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+p a {
+    color: #3EABE1;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}

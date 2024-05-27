@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 
+import Ask from './Ask'
 import logo from '../assets/logo.jpg';
 const Navbar =()=>  {
     const [showSidebar, setShowSidebar] = useState(false);
@@ -8,6 +9,21 @@ const Navbar =()=>  {
     const toggleSidebar = () => {
       setShowSidebar(!showSidebar);
       document.querySelector('.Sidebar').classList.toggle('show');
+    };
+    const [showPopup, setShowPopup] = useState(false);
+
+    const handleLoginSignupClick = () => {
+        setShowPopup(true);
+    };
+
+    const handleClosePopup = () => {
+        setShowPopup(false);
+    };
+
+    const handleSelect = (option) => {
+        setShowPopup(false);
+        // Handle login or signup logic here based on the selected option
+        console.log(`Selected option: ${option}`);
     };
 return (
     <>
@@ -26,7 +42,10 @@ return (
       </div>
 
       <div className='div3'>
-        <a href="/ask" className="signup-logout">Signup / Logout</a>
+        <button className="signup-logout" onClick={handleLoginSignupClick}>
+      Signup / Logout
+        </button> 
+        {showPopup && <Ask onClose={handleClosePopup} onSelect={handleSelect} />}
       </div>
     </div>
       {/* Hamburger menu */}
@@ -40,7 +59,11 @@ return (
             <a href="/services">Services</a>
             <a href="/doctors">Doctors</a>
             <a href="/contact">Contact Us</a>
-            <a href="/ask" className="signup-logouts">Signup / Logout</a>
+            <div className='div3'>
+              <button className="signup-logouts" onClick={handleLoginSignupClick}>
+                Signup / Logout
+              </button> 
+            </div>
     </div>
   </div>
   
