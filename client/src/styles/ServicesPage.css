@@ -1,0 +1,154 @@
+/* Services Page */
+.sp-container {
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.sp-header {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #146E90;
+}
+
+.sp-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.sp-card {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sp-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sp-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.sp-content {
+  padding: 20px;
+}
+
+.sp-title {
+  font-size: 24px;
+  color: #00157C;
+  margin-bottom: 15px;
+}
+
+.sp-description {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.sp-cta-button {
+  display: inline-block;
+  background-color: #3EABE1;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sp-cta-button:hover {
+  background-color: #146E90;
+  cursor: pointer;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* Popup Styles */
+.sp-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+
+.sp-popup-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.sp-close-button {
+position: absolute;
+  color: black;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+.sp-close-button:hover {
+  color: #146E90;
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}
+.sp-popup-title {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.sp-popup-details {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.sp-popup-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sp-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sp-image {
+    height: 150px;
+  }
+
+  .sp-title {
+    font-size: 20px;
+  }
+
+  .sp-description {
+    font-size: 16px;
+  }
+
+  .sp-cta-button {
+    font-size: 14px;
+  }
+}

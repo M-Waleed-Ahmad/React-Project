@@ -1,0 +1,143 @@
+/* Doctors Page */
+.dp-container {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.dp-header {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #146E90;
+}
+
+.dp-count {
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.dp-intro {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #555;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dp-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.dp-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dp-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dp-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.dp-content {
+    padding: 20px;
+    text-align: left;
+}
+
+.dp-name {
+    font-size: 24px;
+    color: #00157C;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.dp-specialty,
+.dp-qualification,
+.dp-license,
+.dp-institute,
+.dp-experience,
+.dp-language {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.dp-specialty strong,
+.dp-qualification strong,
+.dp-license strong,
+.dp-institute strong,
+.dp-experience strong,
+.dp-language strong {
+    color: #00157C;
+}
+
+.dp-specialty,
+.dp-qualification,
+.dp-license,
+.dp-institute,
+.dp-experience,
+.dp-language {
+    text-align: center;
+}
+
+.dp-cons-button {
+    display: inline-block;
+    background-color: #3EABE1;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 15px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dp-cons-button:hover {
+    background-color: #146E90;
+    cursor: pointer;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .dp-header {
+        font-size: 28px;
+    }
+
+    .dp-count {
+        font-size: 18px;
+    }
+
+    .dp-intro {
+        font-size: 16px;
+    }
+
+    .dp-card {
+        margin-bottom: 20px;
+    }
+
+    .dp-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.cons{
+    display: flex;
+    justify-content: center;
+}

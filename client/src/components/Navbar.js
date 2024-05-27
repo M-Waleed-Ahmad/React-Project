@@ -36,7 +36,7 @@ return (
             <div className={`bar ${showSidebar ? 'open' : ''}`}></div>
     </div> 
     <div className="Sidebar">
-            <a href="/home">Home</a>
+            <a href="/about">About Us</a>
             <a href="/services">Services</a>
             <a href="/doctors">Doctors</a>
             <a href="/contact">Contact Us</a>

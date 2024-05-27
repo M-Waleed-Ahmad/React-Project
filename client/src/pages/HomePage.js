@@ -38,6 +38,8 @@ function CoverPage() {
         <div class="container">
             <h2 id='h2'>About Us</h2>
             <p>Nexus Medica was founded with the mission to provide high-quality medical care to our community.</p>
+            <br />
+            <button className='contact-button'>Learn More</button>
         </div>
     </section>
 
