@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../styles/SignupUser.css';
 
@@ -11,6 +11,8 @@ const SignupPage = () => {
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
     const [passwordsMatch, setPasswordsMatch] = useState(true); // State to track whether passwords match
+    const [emailExists, setEmailExists] = useState(false);
+    const [emailCheckError, setEmailCheckError] = useState('');
     const navigate = useNavigate();
 
     const handleRoleSelection = (event) => {
@@ -49,6 +51,10 @@ const SignupPage = () => {
             alert('Passwords do not match!');
             return;
         }
+        else if (emailExists) {
+            alert('Email already exists!');
+            return;
+        }
         // Proceed with form submission
         const formData = {
             firstName: firstName,
@@ -66,9 +72,35 @@ const SignupPage = () => {
         }
     };
 
+    useEffect(() => {
+        const checkEmailExists = async (email) => {
+            if (email) {
+                try {
+                    const response = await fetch(`http://localhost/api/check-email?email=${email}`);
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    const data = await response.json();
+                    setEmailExists(data.exists);
+                    setEmailCheckError('');
+                } catch (error) {
+                    console.error('Error checking email:', error);
+                    setEmailCheckError('Error checking email.');
+                }
+            } else {
+                setEmailExists(false);
+                setEmailCheckError('');
+            }
+        };
+
+        const debounceCheckEmail = setTimeout(() => {
+            checkEmailExists(email);
+        }, 500);
+
+        return () => clearTimeout(debounceCheckEmail);
+    }, [email]);
     return (
         <div className="spu-container">
-            <h1 className="spu-header">Sign Up</h1>
             <h1 className="spu-header">Sign Up</h1>
             <form className="spu-form"  onSubmit={handleSubmit}>
                 <div className="spu-form-group">
@@ -84,10 +116,13 @@ const SignupPage = () => {
                     </div>
                 </div>
 
-                <div className="spu-form-group">
+                <div className={`spu-form-group ${emailExists || emailCheckError ? 'highlight-error' : ''}`}>
                     <div className="spu-input-wrapper">
                         <label htmlFor="email">Email:</label>
                         <input type="email" value={email} onChange={handleEmailChange} />
+                        {emailExists && <p className="error-message">Email already exists</p>}
+                        {emailCheckError && <p className="error-message">{emailCheckError}</p>}
+               
                     </div>
                 </div>
                 <div className={`spu-form-group ${!passwordsMatch ? 'highlight-error' : ''}`}>
@@ -116,7 +151,7 @@ const SignupPage = () => {
                     <div className="spu-name-group">
                         <div className="spu-half">
                             <label htmlFor="gender">Gender:</label>
-                            <select value={role} onChange={handleGenderChange}>
+                            <select value={gender} onChange={handleGenderChange}>
                                 <option value="">Choose Gender</option>
                                 <option value="male">Male</option>
                                 <option value="female">Female</option>

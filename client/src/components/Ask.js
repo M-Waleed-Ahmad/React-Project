@@ -32,8 +32,8 @@ const LoginSignupPopup = ({ onClose, onSelect }) => {
                 </button>
                 <h2 className="ls-popup-header">Would you like to login or signup</h2>
                 <div className="ls-popup-buttons">
-                    <button className="ls-popup-btn" onClick={() => handleSelect('login')}>Login</button>
-                    <button className="ls-popup-btn" onClick={() => handleSelect('signup')}>Signup</button>
+                    <button className="ls-popup-btn" onClick={() => handleSelect('/services/login')}>Login</button>
+                    <button className="ls-popup-btn" onClick={() => handleSelect('/services/signup')}>Signup</button>
                 </div>
             </div>
         </div>

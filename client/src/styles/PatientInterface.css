@@ -1,0 +1,704 @@
+/* Patient Dashboard */
+/* Patient Interface Styling */
+
+.patient-dashboard {
+  margin: 20px;
+}
+
+.patient-nav {
+  display: flex;
+  justify-content: center; /* Centering horizontally */
+  margin-bottom: 20px;
+}
+
+.patient-nav button {
+  padding: 10px 20px;
+  margin: 0 10px; /* Add margin between buttons */
+  background-color: #0077E6;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.patient-nav button:hover {
+  background-color: #003399;
+}
+
+.patient-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.patient-feature {
+  margin-bottom: 40px;
+}
+
+.patient-feature h2 {
+  color: #146E90;
+  margin-bottom: 20px;
+}
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+  .patient-nav {
+    flex-wrap: wrap;
+  }
+
+  .patient-nav button {
+    margin-bottom: 10px;
+    flex-basis: 45%; /* Adjust as needed */
+  }
+}
+
+  /* Patient Profile */
+ /* Patient Interface Styling */
+
+.pip-main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.patient-profile-container {
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+  background-color: #e4e6ec;
+  max-width: 800px;
+  margin: 0 auto; 
+}
+
+#Prof {
+  color: #146E90;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.basic-btn{
+  display: flex;
+  justify-content: space-between;
+}
+.basic-btn button {
+  background: none;
+  border: none;
+}
+.upd{
+  margin-bottom: 7px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+ }
+ .upd:hover {
+  background-color: #8daeeb;
+  color: #fff;  
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap; 
+  align-items: center;
+  justify-content: space-between; 
+  margin-bottom: 30px;
+}
+
+.profile-image-container {
+  margin: 0 auto; 
+  margin-bottom: 20px;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  margin-left: 20px;
+  border-radius: 50%;
+  border: 3px solid #146E90; 
+}
+
+.info-details {
+  flex: 1;
+}
+
+.info-item {
+  margin-bottom: 10px;
+}
+
+.info-item label {
+  font-weight: bold;
+}
+
+.info-item span {
+  margin-left: 10px;
+}
+
+.medical-history {
+  margin-bottom: 30px;
+}
+
+.history-list {
+  list-style: none;
+  padding: 0;
+}
+
+.history-item {
+  margin-bottom: 10px;
+}
+
+.history-date {
+  font-weight: bold;
+  color: #146E90; 
+}
+
+.history-treatment {
+  color: #777; 
+}
+
+.emergency-contact {
+  margin-bottom: 30px;
+}
+
+.emergency-contact h2 {
+  color: #146E90; 
+}
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+  .profile-info {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .info-details {
+    margin-left: 0; 
+    text-align: center; 
+  }
+}
+
+
+/* Patient Appointments */
+/* Patient Interface Styling */
+
+/* Appointments Container */
+.PiA-appointments-container {
+  margin-bottom: 40px;
+}
+
+/* Individual Appointment Item */
+.PiA-appointment-item {
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Information Section */
+.PiA-info {
+  flex: 1;
+}
+
+/* Appointment Actions Section */
+.PiA-actions {
+  display: flex;
+  align-items: center;
+}
+
+/* Confirm and Cancel Buttons */
+.PiA-confirm-btn,
+.PiA-cancel-btn {
+  padding: 8px 16px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Confirm Button */
+.PiA-confirm-btn {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+/* Cancel Button */
+.PiA-cancel-btn {
+  background-color: #f44336;
+  color: #fff;
+}
+
+/* Styling for confirmed appointments */
+.PiA-appointment-item.confirmed {
+  background-color: #e0f2f1;
+}
+
+
+
+/* Patient Prescriptions */
+/* Patient Prescriptions */
+.PPre-prescriptions-container {
+  margin-bottom: 30px;
+}
+
+.PPre-heading {
+  color: #146E90;
+  margin-bottom: 20px;
+}
+
+.PPre-prescription-item {
+  margin-bottom: 20px;
+}
+
+.PPre-prescription-details, .PPre-edit-form {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.PPre-edit-form input[type="text"] {
+  margin-bottom: 10px;
+  padding: 8px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.PPre-edit-buttons button {
+  margin-right: 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.PPre-edit-buttons button:hover {
+  background-color: #146E90;
+  color: #fff;
+}
+
+.PPre-add-button {
+  background-color: #0077E6;
+  color: #fff;
+}
+
+.PPre-add-button:hover {
+  background-color: #003399;
+}
+
+.PPre-delete-button {
+  background-color: #E63946;
+  color: #fff;
+}
+
+.PPre-delete-button:hover {
+  background-color: #A61C26;
+}
+
+.PPre-prescription-form {
+  margin-top: 20px;
+}
+
+.PPre-prescription-form h3 {
+  color: #146E90;
+  margin-bottom: 10px;
+}
+
+.PPre-prescription-form input[type="text"] {
+  margin-bottom: 10px;
+  padding: 8px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.PPre-prescription-form button[type="submit"] {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0077E6;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.PPre-prescription-form button[type="submit"]:hover {
+  background-color: #003399;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .PPre-prescription-details, .PPre-edit-form {
+    flex-direction: column;
+  }
+
+  .PPre-edit-form input[type="text"] {
+    width: calc(100% - 40px); /* Adjusting width for smaller screens */
+  }
+
+  .PPre-edit-buttons button {
+    margin-top: 10px; /* Add margin-top for spacing between buttons */
+  }
+}
+
+
+/* Add these styles to your existing CSS file or update them as needed */
+
+/* Modal */
+.patientsp-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.patientsp-modal {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  max-width: 80%;
+  overflow-y: auto;
+  max-height: 80%;
+}
+
+.patientsp-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Patient Support Community */
+/* Patient Support Community */
+.patientsp-support-community {
+  margin-bottom: 40px;
+}
+
+.patientsp-questions-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.patientsp-question {
+  background-color: #f9f9f9;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.patientsp-questions-container :hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.patientsp-question.hidden {
+  display: none;
+}
+
+.patientsp-question p {
+  margin-bottom: 10px;
+}
+
+.patientsp-question textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.patientsp-question button {
+  background-color: #0077E6;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.patientsp-question button:hover {
+  background-color: #003399;
+}
+
+/* Modal Overlay */
+.patientsp-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.patientsp-modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.patientsp-modal-content h3 {
+  margin-bottom: 10px;
+}
+
+.patientsp-modal-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.patientsp-modal-content li {
+  margin-bottom: 5px;
+}
+
+.patientsp-modal-content textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.patientsp-modal-content button {
+  background-color: #0077E6;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.patientsp-modal-content button:hover {
+  background-color: #003399;
+}
+
+
+.patientsp-question button {
+  background-color: #0077E6;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+
+}
+
+.patientsp-question button:hover {
+  background-color: #003399;
+}
+
+/* Modal Overlay */
+.patientsp-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.patientsp-modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.patientsp-modal-content h3 {
+  color: #146E90;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.patientsp-modal-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.patientsp-modal-content ul li {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.patientsp-modal-content button {
+  background-color: #0077E6;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.patientsp-modal-content button:hover {
+  background-color: #003399;
+}
+
+
+.cl{
+  display: flex;
+  justify-content: center;
+}
+.md{
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Consultations */
+
+
+/* Patient Consultations Page */
+/* Patient Consultations Page */
+.patientsp-consultations-page {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #f3f4f6;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.patientsp-consultations-page h2 {
+  color: #146E90;
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.new-doctor-message {
+  background-color: #0077E6;
+  color: #fff;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.patientsp-doctor-list {
+  margin-bottom: 20px;
+}
+
+.patientsp-doctor-item {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  text-align: center;
+}
+
+.patientsp-doctor-item:hover {
+  background-color: #e0f7fa;
+  transform: translateY(-3px);
+}
+
+.patientsp-doctor-item.selected {
+  background-color: #d0f0fd;
+  border-left: 4px solid #0077E6;
+}
+
+.patientsp-chat-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.patientsp-chat-container h3 {
+  color: #146E90;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.patientsp-chat-history {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+  padding-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.patientsp-chat-message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  width: fit-content;
+  max-width: 70%;
+}
+
+.patientsp-chat-message.sent {
+  background-color: #d1c4e9;
+  align-self: flex-end;
+  text-align: right;
+  margin-left: auto;
+}
+
+.patientsp-chat-message.received {
+  background-color: #e0f7fa;
+  align-self: flex-start;
+  text-align: left;
+  margin-right: auto;
+}
+
+.patientsp-chat-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.patientsp-chat-input textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.patientsp-chat-input button {
+  background-color: #0077E6;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.patientsp-chat-input button:hover {
+  background-color: #003399;
+}

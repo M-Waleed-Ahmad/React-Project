@@ -4,10 +4,8 @@
     box-sizing: border-box;
  }
  
- body{
-   color: #040b30;
-  /* rgba(255, 255, 255, 0.2)  */
- }
+
+
  /* Navbar styling */
  .navbar {
     background-image:linear-gradient(to right, #003399, #0077E6); ;
@@ -171,8 +169,33 @@
   }
 
 
+/* Profile Image */
 
+.profile-icon {
+  width: 30px;
+  height: 30px;
+  fill: white;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
 
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  /* Hide nav-links and profile icon */
+  .navbar .nav-links,
+  .navbar .profile-icon {
+    display: none;
+  }
+  /* Display profile icon at the top */
+  .mobile-profile {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    background-color: #003399;
+    border-bottom: 2px solid #003399;
+  }
+}
 /* Hero Section */
 .hero {
   background-image: url('../assets/background.jpg') ;

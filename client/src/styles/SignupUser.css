@@ -88,3 +88,15 @@ p a:hover {
 .highlight-error input[type='password'] {
     border-color: red; 
 }
+/* Add the following styles to your CSS file */
+
+.highlight-error input[type='password'],
+.highlight-error input[type='email'] {
+    border-color: red;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.8em;
+    margin-top: 5px;
+}

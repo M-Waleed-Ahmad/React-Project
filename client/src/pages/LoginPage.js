@@ -1,14 +1,36 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../styles/LoginPage.css';
 
 const LoginPage = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-
+    const navigate=useNavigate();
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log('Email:', email);
         console.log('Password:', password);
+        login({ email, password });
+    };
+    const login = async (data) => {
+        try {
+            const response = await fetch('http://localhost/api/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
+            });
+            if (response.ok) {
+                console.log('Login successful');
+                navigate('/patient');
+
+            } else {
+                console.error('Login failed');
+            }
+        } catch (error) {
+            console.error('Login failed:', error);
+        }
     };
 
     return (
