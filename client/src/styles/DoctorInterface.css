@@ -1,0 +1,365 @@
+/* Patient Dashboard */
+/* Patient Interface Styling */
+
+.patient-dashboard {
+    margin: 20px;
+  }
+  
+  .patient-nav {
+    display: flex;
+    justify-content: center; /* Centering horizontally */
+    margin-bottom: 20px;
+  }
+  
+  .patient-nav button {
+    padding: 10px 20px;
+    margin: 0 10px; /* Add margin between buttons */
+    background-color: #0077E6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .patient-nav button:hover {
+    background-color: #003399;
+  }
+  
+  .patient-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .patient-feature {
+    margin-bottom: 40px;
+  }
+  
+  .patient-feature h2 {
+    color: #146E90;
+    margin-bottom: 20px;
+  }
+  
+  /* Adjustments for smaller screens */
+  @media screen and (max-width: 768px) {
+    .patient-nav {
+      flex-wrap: wrap;
+    }
+  
+    .patient-nav button {
+      margin-bottom: 10px;
+      flex-basis: 45%; /* Adjust as needed */
+    }
+  }
+/* DoctorProfile.css */
+
+.di-profile-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.di-profile {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+.di-div{
+    display: flex;
+    justify-content: center;
+}
+.di-profile-image-container {
+    margin-left: 40px;
+}
+
+.di-profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.di-profile-info {
+    flex: 1;
+}
+
+.di-profile-name {
+    margin-bottom: 10px;
+    color: #146E90;
+}
+
+.di-profile-info p {
+    margin-bottom: 5px;
+}
+
+.di-patients-container {
+    margin-top: 20px;
+}
+
+.di-patients-heading {
+    color: #146E90;
+    margin-bottom: 10px;
+}
+
+.di-patients-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.di-patient {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.di-patient h3 {
+    margin-bottom: 10px;
+    color: #146E90;
+}
+
+.di-patient p {
+    margin-bottom: 5px;
+}
+  
+/* Doctor Appointments */
+.di-appointments-container {
+  margin-bottom: 40px;
+}
+
+.di-appointments-heading {
+  color: #146E90;
+  margin-bottom: 20px;
+}
+
+.di-create-appointment-btn {
+  background-color: #0077E6;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.di-create-appointment-btn:hover {
+  background-color: #003399;
+}
+
+.di-appointment-form {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.di-appointment-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.di-appointment-form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.di-appointment-form button[type="submit"] {
+  background-color: #0077E6;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.di-appointment-form button[type="submit"]:hover {
+  background-color: #003399;
+}
+
+.di-appointments-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.di-appointment {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.di-appointment p {
+  margin-bottom: 10px;
+}
+
+.di-appointment button {
+  background-color: #E63946;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.di-appointment button:hover {
+  background-color: #A61C26;
+}
+
+
+/* Doctor Prescriptions */
+.di-prescriptions-container {
+  margin-bottom: 40px;
+}
+
+.di-prescriptions-heading {
+  color: #146E90;
+  margin-bottom: 20px;
+}
+
+.di-prescriptions-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.di-prescription {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.di-prescription p {
+  margin-bottom: 10px;
+}
+
+/* Doctor Consultations Page */
+
+.di-consultations-page {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #f3f4f6;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.di-consultations-page h2 {
+  color: #146E90;
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.di-patient-list {
+  margin-bottom: 20px;
+}
+
+.di-patient-item {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  text-align: center;
+}
+
+.di-patient-item:hover {
+  background-color: #e0f7fa;
+  transform: translateY(-3px);
+}
+
+.di-patient-item.selected {
+  background-color: #d0f0fd;
+  border-left: 4px solid #0077E6;
+}
+
+.di-chat-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.di-chat-container h3 {
+  color: #146E90;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.di-chat-history {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+  padding-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.di-chat-message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  width: fit-content;
+  max-width: 70%;
+}
+
+.di-chat-message.doctor {
+  background-color: #d1c4e9;
+  align-self: flex-end;
+  text-align: right;
+  margin-left: auto;
+}
+
+.di-chat-message.patient {
+  background-color: #e0f7fa;
+  align-self: flex-start;
+  text-align: left;
+  margin-right: auto;
+}
+
+.di-chat-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.di-chat-input textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.di-chat-input button {
+  background-color: #0077E6;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.di-chat-input button:hover {
+  background-color: #003399;
+}

@@ -9,6 +9,7 @@ import Login from './pages/LoginPage';
 import Signup from './pages/SignUpUser'
 import SignupPatient from './pages/SignupPatient'
 import PatientInterface from './pages/PatientInterface'
+import DoctorInterface from './pages/DoctorInterface';
 const App = () => {
   return (
     <Router>
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="/services/signup" element={<Signup />} />
         <Route path="/services/signup/patient" element={<SignupPatient />} />
         <Route path="/patient" element={<PatientInterface />} />
+        <Route path="/doctor" element={<DoctorInterface />} />
       </Routes>
     </Router>
   );
